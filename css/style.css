@@ -1,0 +1,78 @@
+/* คำสั่ง ให้นร.แก้ไขไฟล์ CSS นี้ให้มีหน้าจอแสดงผลสวยงามตามที่โปรแกรมเครื่องคิดเลขควรจะเป็น
+    ตัวอย่างสามารถดูได้ในโปรแกรม calculator ใน windows 
+
+    Reference: https://www.w3schools.com/cssref/index.php
+*/
+
+/* ส่วนตัวของเว็บ */
+body{
+    /* ให้ข้อความทุกอย่างจัดอยู่ตรงกลาง */
+    text-align: center; 
+    /* ให้มีกรอบสไตล์ groove */
+    border-style: groove;
+    /* ให้มีความกว้างอย่างน้อยๆไม่ต่ำกว่า 250 pixels */
+    min-width: 250px;
+}
+
+/* ส่วนหัวข้อของหน้าเว็บ */
+h1{
+    /* ตั้งค่าขนาดฟ้อนท์ให้ไม่เล็กกว่า 20 pixels และใหญ่เท่ากับ 20px บวกกับ 3% ของ viewport ฝั่งที่เล็กสุด */
+    font-size: calc(20px + 3vmin);
+}
+
+/* ส่วนตัวเครื่องคิดเลข */
+#calc{
+
+}
+
+/* ส่วนแสดงผลตัวเลข */
+#outputPanel{
+    /* ให้ตำแหน่งของ element ต่างๆภายใต้ส่วนนี้ขึ้นกับขนาดของ outputPanel */
+    position: relative;
+    /* ให้แสดงผลเป็นประเภท inline แทน คือความกว้างไม่สุดจอ */
+    display: inline-block;
+
+    /* กว้าง 40% ของจอ สูง 10% ของจอ */
+    width: 40vw;
+    height: 10vh;
+
+    /* กว้างไม่ต่ำกว่า 200 pixels   */
+    min-width: 200px;
+    
+}
+
+#inputPanel{
+    position: relative;
+    display: inline-block;
+}
+
+#display{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    font-size: calc(12px + 1vmin);
+}
+
+.bt{
+
+}
+
+.bt-num{
+
+}
+
+.bt-ops{
+
+}
+
+.bt-del{
+
+}
+
+.bt-clear{
+
+}
+
+.bt-optional{
+
+}
