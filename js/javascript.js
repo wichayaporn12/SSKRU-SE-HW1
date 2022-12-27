@@ -49,66 +49,92 @@ function oneClicked()
 function twoClicked()
 {
     dbg("2 is clicked");
+    currentOutput += "2";
+    document.getElementById("display").value = currentOutput;
 }
 
 function threeClicked()
 {
     dbg("3 is clicked");
+    currentOutput += "3";
+    document.getElementById("display").value = currentOutput;
 }
 
 function fourClicked()
 {
     dbg("4 is clicked");
+    currentOutput += "4";
+    document.getElementById("display").value = currentOutput;
 }
 
 function fiveClicked()
 {
     dbg("5 is clicked");
+    currentOutput += "5";
+    document.getElementById("display").value = currentOutput;
 }
 
 function sixClicked()
 {
     dbg("6 is clicked");
+    currentOutput += "6";
+    document.getElementById("display").value = currentOutput;
 }
 
 function sevenClicked()
 {
     dbg("7 is clicked");
+    currentOutput += "7";
+    document.getElementById("display").value = currentOutput;
 }
 
 function eightClicked()
 {
     dbg("8 is clicked");
+    currentOutput += "8";
+    document.getElementById("display").value = currentOutput;
 }
 
 function nineClicked()
 {
     dbg("9 is clicked");
+    currentOutput += "9";
+    document.getElementById("display").value = currentOutput;
 }
 
 function zeroClicked()
 {
     dbg("0 is clicked");
+    currentOutput += "0";
+    document.getElementById("display").value = currentOutput;
 }
 
 function dotClicked()
 {
     dbg(". is clicked");
+    currentOutput += ".";
+    document.getElementById("display").value = currentOutput;
 }
 
 function plusClicked()
 {
     dbg("+ is clicked");
+    currentOutput += "+";
+    document.getElementById("display").value = currentOutput;
 }
 
 function minusClicked()
 {
     dbg("- is clicked");
+    currentOutput += "-";
+    document.getElementById("display").value = currentOutput;
 }
 
 function multiplyClicked()
 {
     dbg("x is clicked");
+    currentOutput += "*";
+    document.getElementById("display").value = currentOutput;
 
     /* คำแนะนำ
         ตัวคูณในภาษาจาวาสคริปคือ *
@@ -118,6 +144,8 @@ function multiplyClicked()
 function divideClicked()
 {
     dbg("÷ is clicked");
+    currentOutput += "/";
+    document.getElementById("display").value = currentOutput;
 
     /* คำแนะนำ
         ตัวหารในภาษาจาวาสคริปคือ /
@@ -127,7 +155,9 @@ function divideClicked()
 function equalClicked()
 {
     dbg("= is clicked");
-
+    var result = eval(currentOutput);
+    document.getElementById("display").value = result;
+    currentOutput = result;
     /* คำแนะนำ 
         ให้ใช้ฟังก์ชั่น eval ในการคำนวนค่าบวกลบคูณหาร
         ตัวอย่าง eval("10+7"); จะได้ผลลัพธ์ 17 
@@ -142,6 +172,8 @@ function equalClicked()
 function delClicked()
 {
     dbg("del is clicked");
+    currentOutput = currentOutput.substring(0, currentOutput.length-1);
+    document.getElementById("display").value = currentOutput;
 
     /* คำแนะนำ
         ให้ใช้ฟังก์ชั่น substring() หรือ slice() เพื่อลบตัวอักษรท้ายสุด 
@@ -160,6 +192,8 @@ function delClicked()
 function clearClicked()
 {
     dbg("C is clicked");
+    currentOutput = "";
+    document.getElementById("display").value = currentOutput;
 
     /* คำแนะนำ
         ให้ล้างค่า currentOutput และอัพเดท HTML text input id="display" โดยการใช้ document.getElementById()
@@ -174,9 +208,13 @@ function clearClicked()
 function poClicked()
 {
     dbg("( is clicked");
+    currentOutput += "(";
+    document.getElementById("display").value = currentOutput;
 }
 
 function pcClicked()
 {
     dbg(") is clicked");
+    currentOutput += ")";
+    document.getElementById("display").value = currentOutput;
 }

@@ -44,27 +44,32 @@
         <!-- คำสั่ง ให้นร.แก้ไขไฟล์ HTML นี้ให้มีหน้าจอแสดงผลสวยงามตามที่โปรแกรมเครื่องคิดเลขควรจะเป็น
               ตัวอย่างสามารถดูได้ในโปรแกรม calculator ใน windows
         -->
+        <input id="parenthesis-open" class="bt bt-optional" type="button" value="(" onclick="poClicked()">
+        <input id="parenthesis-close" class="bt bt-optional" type="button" value=")" onclick="pcClicked()">
+        <input id="clear" class="bt bt-clear" type="button" value="C" onclick="clearClicked()">
+        <input id="del" class="bt bt-del" type="button" value="del" onclick="delClicked()">
+        <br>
         <input id="one" class="bt bt-num" type="button" value="1" onclick="oneClicked()">
         <input id="two" class="bt bt-num" type="button" value="2" onclick="twoClicked()">
         <input id="three" class="bt bt-num" type="button" value="3" onclick="threeClicked()">
+        <input id="plus" class="bt bt-ops" type="button" value="+" onclick="plusClicked()">
+        <br>
         <input id="four" class="bt bt-num" type="button" value="4" onclick="fourClicked()">
         <input id="five" class="bt bt-num" type="button" value="5" onclick="fiveClicked()">
         <input id="six" class="bt bt-num" type="button" value="6" onclick="sixClicked()">
+        <input id="minus" class="bt bt-ops" type="button" value="-" onclick="minusClicked()">
+        <br>
         <input id="seven" class="bt bt-num" type="button" value="7" onclick="sevenClicked()">
         <input id="eight" class="bt bt-num" type="button" value="8" onclick="eightClicked()">
         <input id="nine" class="bt bt-num" type="button" value="9" onclick="nineClicked()">
-        <input id="zero" class="bt bt-num" type="button" value="0" onclick="zeroClicked()">
-        <input id="dot" class="bt bt-num" type="button" value="." onclick="dotClicked()">
-        <input id="plus" class="bt bt-ops" type="button" value="+" onclick="plusClicked()">
-        <input id="minus" class="bt bt-ops" type="button" value="-" onclick="minusClicked()">
         <input id="multiply" class="bt bt-ops" type="button" value="x" onclick="multiplyClicked()">
-        <input id="divide" class="bt bt-ops" type="button" value="÷" onclick="divideClicked()">
+        <br>
+        <input id="dot" class="bt bt-num" type="button" value="." onclick="dotClicked()">
+        <input id="zero" class="bt bt-num" type="button" value="0" onclick="zeroClicked()">
         <input id="equal" class="bt bt-ops" type="button" value="=" onclick="equalClicked()">
-        <input id="del" class="bt bt-del" type="button" value="del" onclick="delClicked()">
-        <input id="clear" class="bt bt-clear" type="button" value="C" onclick="clearClicked()">
+        <input id="divide" class="bt bt-ops" type="button" value="÷" onclick="divideClicked()">
+        <br>
         <!-- Optional buttons ส่วนข้างล่างนี้จะทำหรือไม่ทำก็ได้ -->
-        <input id="parenthesis-open" class="bt bt-optional" type="button" value="(" onclick="poClicked()">
-        <input id="parenthesis-close" class="bt bt-optional" type="button" value=")" onclick="pcClicked()">
       </div>
     </div>
   </body>
